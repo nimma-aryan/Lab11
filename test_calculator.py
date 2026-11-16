@@ -1,4 +1,4 @@
-# GitHub Respository URL: https://github.com/nimma-aryan/Lab11.git
+# GitHub Respository URL:
 # Partern 1:
 # Partern 2: Rhiannon Harpe
 
@@ -15,9 +15,9 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(add(0, 0), 0)
 
     def test_subtract(self):
-        self.assertEqual(sub(5, 3), 2)
-        self.assertEqual(sub(3, 5), -2)
-        self.assertEqual(sub(5, 5), 0)
+        self.assertEqual(subtract(5, 3), 2)
+        self.assertEqual(subtract(3, 5), -2)
+        self.assertEqual(subtract(5, 5), 0)
 
     ######## Partner 1
     def test_multiply(self):
@@ -43,22 +43,22 @@ class TestCalculator(unittest.TestCase):
 
 
     def test_logarithm(self): # 3 assertions
-        self.assertAlmostEqual(log(2, 8), 3)
-        self.assertAlmostEqual(log(10, 100), 2)
-        self.assertAlmostEqual(log(5, 1), 0)
+        self.assertAlmostEqual(logarithm(2, 8), 3)
+        self.assertAlmostEqual(logarithm(10, 100), 2)
+        self.assertAlmostEqual(logarithm(5, 1), 0)
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
-            log(0, 8)
+            logarithm(0, 8)
         with self.assertRaises(ValueError):
-            log(1, 8)
+            logarithm(1, 8)
         with self.assertRaises(ValueError):
-            log(-2, 8)
+            logarithm(-2, 8)
     
     ######## Partner 1
     def test_log_invalid_argument(self): # 1 assertion
         with self.assertRaises(ValueError):
-            calculator.log(2, -5)
+            calculator.logarithm(2, -5)
 
 
     def test_hypotenuse(self): # 3 assertions
