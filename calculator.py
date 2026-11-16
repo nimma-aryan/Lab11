@@ -9,6 +9,14 @@ One function per operation, in order.
 import math
 
 # Functions
+def square_root(a):
+    if a < 0:
+        raise ValueError("Cannot take square root of a negative number")
+    return math.sqrt(a)
+
+def hypotenuse(a, b):
+    return math.hypot(a, b)
+
 def add(a, b): 
     return a + b
 
@@ -31,7 +39,10 @@ def log(a, b):
 def exp(a, b):
     return a ** b
 
+
 if __name__ == "__main__":
+    print(square_root(49))
+    print(hypotenuse(5, 12))
     print(add(2, 3))
     print(sub(5, 3))
     print(mul(2, 3))
