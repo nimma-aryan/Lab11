@@ -1,3 +1,8 @@
+# GitHub Respository URL: https://github.com/nimma-aryan/Lab11.git
+# Partern 1:
+# Partern 2: Rhiannon Harpe
+
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -40,12 +45,3 @@ def exp(a, b):
     return a ** b
 
 
-if __name__ == "__main__":
-    print(square_root(49))
-    print(hypotenuse(5, 12))
-    print(add(2, 3))
-    print(sub(5, 3))
-    print(mul(2, 3))
-    print(div(2, 10))
-    print(log(2, 8))
-    print(exp(2, 3))
